@@ -188,7 +188,7 @@ def mol_weight(amino_string):
     weight_dict = { 'A':89, 'R':174,  'N':132 , 'D':133 , 'C':121 , 'Q':146 , 'E':147 , 'G':75 , 'H':155, 'I':131 , 'L':131 , 'K':146 ,'M' :149 ,
                'F':165 , 'P':115 , 'S':105 , 'T':119 , 'W' :204 , 'Y' :181 , 'V' :117}
     temp_list = []
-    if amino_string.find('a') ==1or amino_string.find('e') ==1 or amino_string.find('l') ==1or amino_string.find('n') ==1 or amino_string.find('r') ==1 or amino_string.find('s') ==1 or amino_string.find('y') ==1   : 
+    if amino_string.find('a') ==1 or amino_string.find('e') ==1 or amino_string.find('l') ==1 or amino_string.find('n') ==1 or amino_string.find('r') ==1 or amino_string.find('s') ==1 or amino_string.find('y') ==1   : 
         one_letter_string = letter3to1(amino_string,'')
     else:
         for i in amino_string:
