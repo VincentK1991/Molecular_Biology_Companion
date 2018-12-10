@@ -206,9 +206,9 @@ def aa_composition(amino_string):
 	temp_dict = {}
 	for i in amino_string:
 		if i not in temp_dict.keys():
-			temp_dict{i} = 1
+			temp_dict[i] = 1
 		if i in temp_dict.keys():
-			temp_dict{i} += 1
+			temp_dict[i] += 1
 
 	percent_dict = temp_dict
 
