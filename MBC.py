@@ -201,19 +201,19 @@ def mol_weight(amino_string):
     return mol_weight
 
 def aa_composition(amino_string, optional_argument = 'percent'):
-	'''only take in one-letter coded amino acid strings.'''
-	length = len(amino_string)
-	temp_dict = {}
-	for i in amino_string:
-		if i not in temp_dict.keys():
-			temp_dict[i] = 1
-		if i in temp_dict.keys():
-			temp_dict[i] += 1
+    '''only take in one-letter coded amino acid strings.'''
+    length = len(amino_string)
+    temp_dict = {}
+    for i in amino_string:
+        if i not in temp_dict.keys():
+            temp_dict[i] = 1
+        if i in temp_dict.keys():
+            temp_dict[i] += 1
 
     if optional_argument == 'percent':
         percent_dict = temp_dict
         for i in percent_dict:
-		  percent_dict[i] = (percent_dict[i]/length)*100
+            percent_dict[i] = (percent_dict[i]/length)*100
         return percent_dict
 
     if optional_argument == 'count':
@@ -221,10 +221,9 @@ def aa_composition(amino_string, optional_argument = 'percent'):
 
     if optional_argument == 'fraction':
         fraction_dict = temp_dict
-        for i in percent_dict:
-          fraction_dict[i] = (fraction_dict[i]/length)
+        for i in fraction_dict:
+            fraction_dict[i] = (fraction_dict[i]/length)
         return fraction_dict
-
 
 
 
