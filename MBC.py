@@ -6,11 +6,7 @@
 # In[1]:
 
 def Rev_com(string):
-    i = 0
-    DNA = []
-    Rev_Com = []
-    for i in string:
-        DNA.append(i)
+    DNA = list(string)
     #print (DNA)
     for j in reversed(DNA):
         #print (j)
@@ -31,7 +27,7 @@ def Rev_com(string):
         elif j == 'C':
             Rev_Com.append('G')
         else :
-            print ('error')
+            Rev_Com.append(j)
     Rev_Com_str = ''.join(Rev_Com)
     #print (Rev_Com_str)
     return Rev_Com_str
@@ -106,9 +102,6 @@ def translation(DNA_string):
         else:
             temp_list_del1.append(DNA_list[i+2])
 
-    frame1_list = temp_list
-    frame2_list = temp_list_del0
-    frame3_list = temp_list_del1
 
     def translate(list,codon_table):
         codon_list = []
@@ -206,4 +199,30 @@ def mol_weight(amino_string):
         mol_weight = mol_weight + weight_dict[i]
     
     return mol_weight
+
+def aa_composition(amino_string):
+	'''only take in one-letter coded amino acid strings.'''
+	length = len(amino_string)
+	temp_dict = {}
+	for i in amino_string:
+		if i not in temp_dict.keys():
+			temp_dict{i} = 1
+		if i in temp_dict.keys():
+			temp_dict{i} += 1
+
+	percent_dict = temp_dict
+
+	for i in percent_dict:
+		percent_dict[i] = (percent_dict[i]/length)*100
+
+	return percent_dict
+
+
+
+
+
+
+
+
+
 
