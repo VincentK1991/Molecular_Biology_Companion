@@ -146,7 +146,7 @@ def translation(DNA_string):
 
 # In[5]:
 
-def letter3to1(threeletteraminoacid_string, sep) :
+def letter3to1(threeletteraminoacid_string, sep = '-') :
     amino_3to1letter = { 'Arg':'R' , 'His':'H' , 'Lys':'K' , 'Asp':'D' , 'Glu':'E' , 'Ser':'S' , 'Thr': 'T' , 'Asn':'N' , 'Gln':'Q' , 'Cys':'C' , 'Gly':'G' , 'Pro':'P' ,
                     'Ala':'A' , 'Val' : 'V' , 'Ile' : 'I' , 'Leu':'L' , 'Met':'M' , 'Phe':'F' , 'Tyr':'Y' , 'Trp':'W' }
     temp_list = []
