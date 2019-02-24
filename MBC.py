@@ -6,6 +6,7 @@
 # In[1]:
 
 def Rev_com(string):
+	Rev_Com = []
     DNA = list(string)
     #print (DNA)
     for j in reversed(DNA):
@@ -129,9 +130,9 @@ def translation(DNA_string):
         protein_string = '-'.join(protein_list)
         
         return protein_string
-    ans1 = translate(frame1_list,codon_table)
-    ans2 = translate(frame2_list,codon_table)
-    ans3 = translate(frame3_list,codon_table)
+    ans1 = translate(temp_list,codon_table)
+    ans2 = translate(temp_list_del0,codon_table)
+    ans3 = translate(temp_list_del1,codon_table)
     #print("frame 1 reads " , ans1)
     #print("frame 2 reads " , ans2)
     #print("frame 3 reads " , ans3)
